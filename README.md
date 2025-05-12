@@ -1,130 +1,89 @@
 # TalentMatch - Plataforma de Reclutamiento con IA
 
-TalentMatch es una plataforma de reclutamiento desarrollada con Spring Boot y que utiliza inteligencia artificial de Google Cloud (Gemini AI) para emparejar candidatos con vacantes laborales.
+TalentMatch es una plataforma que utiliza inteligencia artificial para emparejar candidatos con vacantes laborales de forma eficiente y precisa.
 
 ## Características Principales
 
-- **Registro y gestión de perfiles** para candidatos y reclutadores
-- **Sistema de búsqueda avanzada** de candidatos y vacantes
-- **Emparejamiento inteligente** mediante IA que analiza perfiles y requisitos
-- **Almacenamiento seguro** de CV y documentos en Firebase Storage
-- **Análisis de perfiles** con recomendaciones personalizadas
-- **Gestión completa** del proceso de reclutamiento
+1. **Emparejamiento inteligente con IA** que analiza perfiles y requisitos
+2. **Dashboards personalizados** para candidatos, reclutadores y administradores
+3. **Gestión completa** del proceso de reclutamiento
+4. **Análisis de perfiles** con recomendaciones personalizadas
+5. **Modo de demostración** para explorar la plataforma sin backend
 
-## Tecnologías Utilizadas
+## Tecnologías Principales
 
-- **Backend**: Java 17, Spring Boot 3.2
-- **Base de Datos**: MySQL 8
-- **Seguridad**: Spring Security, JWT
-- **Almacenamiento**: Firebase Storage
-- **IA**: Google Cloud Vertex AI (Gemini Pro)
-- **Documentación**: OpenAPI/Swagger
+### Backend
+- **Spring Boot 3.2** (Java 17)
+- **MySQL 8**
+- **Google Cloud Vertex AI** (Gemini Pro)
+- **Firebase Storage**
 
-## Requisitos Previos
+### Frontend
+- **Next.js 14** (React 18)
+- **TypeScript**
+- **Tailwind CSS**
 
-- Java JDK 17 o superior
-- Maven 3.8 o superior
+
+## Modo Demo
+
+**Disponible solo cuando el backend está inactivo**
+
+| Correo | Contraseña | Rol |
+|--------|------------|-----|
+| candidato@demo.com | candidato | Candidato |
+| reclutador@demo.com | reclutador | Reclutador |
+| admin@demo.com | admin | Administrador |
+
+Ideal para demostraciones y pruebas rápidas sin backend.
+
+
+## Requisitos e Instalación
+
+### Requisitos Esenciales
+- Java 17, Maven 3.8
 - MySQL 8
-- Una cuenta de Firebase con Storage habilitado
-- Una cuenta de Google Cloud con acceso a Vertex AI
-- Git
+- Node.js 18, npm 9
+- Cuentas de Firebase y Google Cloud
 
-## Modo de Demostración
+### Pasos Rápidos de Instalación
 
-La aplicación incluye un modo de demostración que permite navegar por los diferentes dashboards **únicamente cuando el backend no está activo**. Para acceder, utiliza las siguientes credenciales en la página de inicio de sesión:
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/tu-usuario/talentmatch.git
+   ```
 
-| Correo | Contraseña | Acceso |
-|--------|------------|--------|
-| candidato@demo.com | candidato | Dashboard de candidatos |
-| reclutador@demo.com | reclutador | Dashboard de reclutadores |
-| admin@demo.com | admin | Dashboard de administradores |
+2. **Backend**
+   ```bash
+   cd backend
+   # Configurar application.properties con credenciales
+   mvn spring-boot:run
+   ```
+   Servidor: `http://localhost:8080/api`
 
+3. **Frontend**
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
+   Aplicación: `http://localhost:3000`
 
-## Instalación y Configuración
+## Estructura Principal
 
-### 1. Clonar el repositorio
-
-```bash
-git clone https://github.com/tu-usuario/talentmatch.git
-cd talentmatch
-```
-
-### 2. Configurar la base de datos
-
-Crear una base de datos MySQL:
-
-```sql
-CREATE DATABASE talentmatch;
-```
-
-### 3. Configurar Firebase Storage
-
-1. Crear un proyecto en Firebase
-2. Habilitar Firebase Storage
-3. Descargar el archivo de configuración de cuenta de servicio (JSON)
-4. Colocar el archivo en `backend/src/main/resources/firebase-service-account.json`
-
-
-### 5. Configurar application.properties
-
-Actualizar el archivo `backend/src/main/resources/application.properties` con la información correcta:
-
-```properties
-# Base de datos
-spring.datasource.url=jdbc:mysql://localhost:3306/talentmatch?useSSL=false&serverTimezone=UTC
-spring.datasource.username=tu_usuario
-spring.datasource.password=tu_contraseña
-
-# Firebase
-firebase.storage.bucket=tu-proyecto.appspot.com
-firebase.config.path=firebase-service-account.json
-
-# Google Cloud / Gemini AI
-gcp.project.id=tu-proyecto-id
-gcp.region=tu-region
-gemini.model=gemini-pro
-
-# JWT
-jwt.secret=una_clave_segura_para_produccion
-```
-
-### 6. Compilar y ejecutar el proyecto
-
-```bash
-cd backend
-mvn clean install
-mvn spring-boot:run
-```
-
-El servidor estará disponible en `http://localhost:8080/api`
-
-### 7. Acceder a la documentación API
-
-Una vez iniciado el servidor, puede acceder a la documentación OpenAPI/Swagger en:
-
-```
-http://localhost:8080/api/swagger-ui
-```
-
-## Estructura del Proyecto
-
-El proyecto sigue una arquitectura en capas:
-
-- **Entity**: Modelos de datos (Candidato, Reclutador, Vacante, etc.)
-- **Repository**: Interfaces para acceso a datos con Spring Data JPA
+### Backend
+- **Entity**: Modelos de datos
 - **Service**: Lógica de negocio
-- **Controller**: Endpoints REST para la API
-- **DTO**: Objetos de transferencia de datos
-- **Exception**: Manejo centralizado de excepciones
-- **Security**: Configuración de seguridad y autenticación
-- **Config**: Configuraciones generales del sistema
+- **Controller**: API REST
+- **Security**: Autenticación JWT
 
-## Funcionamiento de la IA
+### Frontend
+- **app**: Páginas y rutas (dashboards, login)
+- **components**: Componentes reutilizables
+- **contexts**: Estado global (AuthContext)
+- **services**: Comunicación con backend
 
-El sistema utiliza Gemini Pro de Google Cloud para:
+## Funcionalidades IA
 
-1. **Emparejamiento Candidato-Vacante**: Analiza perfiles y requisitos para calcular un porcentaje de compatibilidad.
-2. **Recomendaciones Personalizadas**: Sugiere vacantes a candidatos y candidatos a reclutadores.
-3. **Análisis de Perfiles**: Identifica fortalezas, debilidades y oportunidades de mejora.
-4. **Generación de Descripciones**: Crea descripciones profesionales para vacantes.
-
+- **Emparejamiento**: Cálculo de compatibilidad candidato-vacante
+- **Recomendaciones**: Sugerencias personalizadas
+- **Análisis**: Evaluación de perfiles
