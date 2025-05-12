@@ -29,6 +29,17 @@ TalentMatch es una plataforma de reclutamiento desarrollada con Spring Boot y qu
 - Una cuenta de Google Cloud con acceso a Vertex AI
 - Git
 
+## Modo de Demostración
+
+La aplicación incluye un modo de demostración que permite navegar por los diferentes dashboards **únicamente cuando el backend no está activo**. Para acceder, utiliza las siguientes credenciales en la página de inicio de sesión:
+
+| Correo | Contraseña | Acceso |
+|--------|------------|--------|
+| candidato@demo.com | candidato | Dashboard de candidatos |
+| reclutador@demo.com | reclutador | Dashboard de reclutadores |
+| admin@demo.com | admin | Dashboard de administradores |
+
+
 ## Instalación y Configuración
 
 ### 1. Clonar el repositorio
@@ -117,20 +128,3 @@ El sistema utiliza Gemini Pro de Google Cloud para:
 3. **Análisis de Perfiles**: Identifica fortalezas, debilidades y oportunidades de mejora.
 4. **Generación de Descripciones**: Crea descripciones profesionales para vacantes.
 
-## Modo de Demostración
-
-La aplicación incluye un modo de demostración que permite navegar por los diferentes dashboards **únicamente cuando el backend no está activo**. Para acceder, utiliza las siguientes credenciales en la página de inicio de sesión:
-
-| Correo | Contraseña | Acceso |
-|--------|------------|--------|
-| candidato@demo.com | candidato | Dashboard de candidatos |
-| reclutador@demo.com | reclutador | Dashboard de reclutadores |
-| admin@demo.com | admin | Dashboard de administradores |
-
-**Nota importante:** El sistema detecta automáticamente si el backend está funcionando. Si el backend está activo, las credenciales de demostración no funcionarán y se mostrará un mensaje indicando que el modo demo solo está disponible cuando el backend no está activo.
-
-Este modo es ideal para:
-
-- Realizar demostraciones del sistema sin dependencia del backend
-- Explorar la interfaz durante el desarrollo
-- Probar diferentes roles y funcionalidades rápidamente cuando no se tiene acceso al backend
