@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "talentmatch-app",
+  "private_key_id": "4bd51e3ee175cb5bfb92335d22dcbe2b7662c2de",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDM4GVrHHV52MP0\nyiV08lf6lNCQvtYw5Mok/2urWIr5hzFXXFi123jUn8vaZl7Wb6z/LHDlg6yXMT54\n0m/1hEKeL4/widp1yQOIe0Ezk8s4evqeYHHI3UxkvThhBCWbcSZulFfv3/Ow+W/b\nAwF26/E65Sy38Fl3ZXPovKXh3bQG1jLbxT+lx7jn5NgOPxl0IRB7Rxui7GZMe8qi\nIOebiNEKVtCckmL45EWbMkppyI9IbNNcprHjPvV/8v6x1xzNHiMPC6jI3edKIDWY\nYJUPSjf0fXvGTGM0pxPfpbtG3BF3ejib7i4t19XeIpwZYCZ8B57f7kRNvIpl3CbD\nwtpLgAZbAgMBAAECggEALfNqa9KvOov2r3GjYw5z0x0Lhlt3GPJHsHKlSIIMcZjz\n5R8uOmOmPzIz+6EYRko35+ekzqVw0VxXIaw5Njza4DXUt+ODXwWdyD+0yQet/dX/\nXgRNoPqZhsK14XSXpryDHSwiaQe21YusndeXvX9/1HDQTdUXi+LyU1H0dqtOFHYR\nqK6p/X3bo7ORP5SZIViE2hMw+gGfCgwY2ajh/K+V5XGk4gwjBF6zh1dUZU09JH6B\nuQd7Lx3l2nAqBt6HkQD/uDMwQkjslqPHwEIgUsR+WffxE8vytqXDiv92x5e4DPjh\nA9BEI0rBx0aisaH8lwOULI4olBD5ET833HOpOPofiQKBgQDlzeJTDGq+D79lGL2C\nzczNF+l+oE0Jt8kafGUn7Vm3LoWpl84hsITYZ2JiN1bJa9DBocuhrYXBdHGnqfPN\nZ2ZZZGS/0whwSIDugLInJ5yGLbfaJ204pr5scWmWu6v4wtu5GkFP4y/MtrYdAPWs\nQ0cEp7QnlEkXwMktn4KIVcn8LwKBgQDkOxNhs9sWgkN+J69Pl8IIpon9IGTKU2cI\nuuy/HPm+xYy8b+kSVlzitVseb/byS4WUy2XDB0pihdYCWlf9ovpkVgLXhLrsw7gA\neCbMs/Spxj6RevoDVxeEf3oPoDw95Pe0Laek8qv87WLQSOh2RKl85+pTlNUmbYvk\nQ/CGZ/jxlQKBgH03aAEUnP0fG4z8pBaoCNYgF2yV8CRBbmTuLzhITkBQKyizvPAC\nfQBlpOgbe0CZbNB1Vr2sDVvSFTPkmSHtG4nN+E/Fr61u9EIBAhHvtYwvUSSfoxXh\nVZVFXuFxNU2A77S2p6veAOetDyJSqYrJxeK1dqayV/mHZJdlePzMshilAoGBAMp0\nGQpHOCZsYSCMZXfuP8HasXcoACB2AWT+I7qYInZ22RPjFdYdZAH7LBwA6AcgtRs7\nnkZ1tidVX3Tw3TLyGrlcjuLNK9+Q8i0AaDKXw4XChIgalaLW49a2Gfm4gxfIf26G\nPTsVxTj0/v2SXxtiZxKUywlfcgDHlhtjpP4lRvBNAoGAIyadkbDAyQvQCxTZjnZg\nk4MRv7ZIaHBguYeKwALxEerf2KaKHzXCg3qO6kbbGQwePcUASxWsdgSIbwh+4MF1\nQgoL7GKy/ZYYaWKZXGiq7d/q6fH944CY9P4Nm1qWEaeX2NDZq+GB6ZGj6aJatysZ\np/AQa4BrmJ92KG7ufUmWRt8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@talentmatch-app.iam.gserviceaccount.com",
+  "client_id": "107824354250096960860",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40talentmatch-app.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

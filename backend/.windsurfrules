@@ -1,0 +1,44 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+El software que deseo crear es el siguiente:
+
+¿Qué es TalentMatch?
+TalentMatch es una plataforma web inteligente de reclutamiento desarrollada exclusivamente para la empresa Vertex, cuyo objetivo principal es optimizar y automatizar el proceso de selección de talento humano mediante el uso intensivo de inteligencia artificial (IA).
+Diseñada para ofrecer una experiencia más eficiente, precisa y estratégica, TalentMatch transforma radicalmente la forma en que se gestionan las contrataciones dentro de Vertex, beneficiando tanto al área de Recursos Humanos como a los candidatos postulantes.
+
+¿Cómo funciona TalentMatch?
+- Registro de usuarios (candidatos, reclutadores y administrador) con autenticación segura.
+- Carga de CVs y datos de perfil por parte del candidato.
+- Publicación de vacantes por parte de reclutadores, con definición de requisitos, áreas y nivel.
+- Generación dinámica de pruebas técnicas, personalizadas por la IA según el perfil de la vacante.
+- Evaluación automática de resultados, incluyendo retroalimentación directa al candidato.
+- Matching inteligente entre perfiles de candidatos y vacantes, generando un ranking de postulantes.
+- Dashboard para reclutadores con métricas, estado de procesos, y comparativas.
+- Sistema de notificaciones internas y bandeja de entrada.
+- Historial completo de postulaciones, estados, resultados y feedback.
+- Favoritos, para que los candidatos guarden ofertas de su interés.
+- Panel administrativo para gestión general del sistema, usuarios y flujos.
+
+¿Qué usa TalentMatch? (Tecnologías principales)
+Backend: Java + Spring Boot.
+Base de datos: MySQL.
+Almacenamiento de archivos (CVs, fotos): Firebase Storage.
+Inteligencia Artificial (Api de Gemini): 
+Integrada desde el inicio, utilizada para:
+Análisis semántico de CVs.
+Generación de pruebas técnicas.
+Matching de perfiles.
+Retroalimentación automatizada.
+Entrevistas automatizadas preliminares.
+
+¿Cuándo se usa?
+TalentMatch es usado exclusivamente por la empresa Vertex como su sistema central de reclutamiento. Está diseñado para estar disponible 24/7, en la nube, con interfaces intuitivas tanto para reclutadores como para postulantes.
+
+Principios Clave
+- Solo una empresa (Vertex):
+No se manejarán múltiples empresas como en plataformas tipo LinkedIn o Indeed.
+- La IA no es un extra, es el corazón:
+Todo gira en torno al uso inteligente de los datos para mejorar los procesos de selección.
